@@ -29,6 +29,7 @@ class DownloadHandler(FileSystemEventHandler):
             file_type = file_extension[1:]  # Remove the leading dot
 
             # Runs a script which organizes the downloads folder to specific folders according to their extension type
+            # Modify the path according to yours
             subprocess.run(["python", r"C:\Users\yuviv\Documents\ProjectsFile\PythonAutomationScript\organize_download_files.py"])
 
             # Add the file to the set of processed files
